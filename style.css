@@ -1,0 +1,214 @@
+body {
+    margin: 0 auto;
+    background: linear-gradient(180deg, #282828 0%, rgba(255, 255, 255, 0) 100%), #171717;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #F0F0F0;
+    padding: 0.5em 1em;
+}
+
+#logo {
+    height: 4em;
+    width: 8em;
+}
+
+#navbar {
+    width: 20vw;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar a {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    color: #171717;
+}
+
+#titles {
+    color: #FFFFFF;
+    padding-left: 10em;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: 5em;
+    margin-bottom: -0.5em;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+#intro {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 10em auto 10em 35em 2em;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . . introText ."
+        ". portrait . introText ."
+        ". sound . introText ."
+        ". soundText . introText ."
+        ". . . introText .";
+}
+
+#intro p {
+    color: #FFFFFF;
+}
+
+#portrait {
+    grid-area: portrait;
+}
+
+#sound {
+    width: 3em;
+    grid-area: sound;
+    justify-self: center;
+    margin-top: 1em;
+}
+
+#soundText {
+    font-family: 'Titillium Web', sans-serif;
+    grid-area: soundText;
+    justify-self: center;
+}
+
+#introText {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 3em;
+    grid-area: introText;
+}
+
+#contact {
+    display: grid;
+    grid-template-areas: ". content";
+    grid-template-columns: 10vw 90vw;
+}
+
+#contactGroup {
+    height: auto;
+    width: 88.7vw;
+    background-color: #F0F0F0;
+    grid-area: content;
+    border-radius: 0.5em 0 0 0.5em;
+    padding-bottom: 5.5em;
+}
+
+#contactGroup h1 {
+    padding-left: 1em;
+}
+
+#contactGroup h2 {
+    padding-left: 2.7em;
+    font-size: 2em;
+}
+
+#contactGroup span {
+    font-weight: bold;
+}
+
+#contactItemsSection {
+    padding-left: 2em;
+    display: grid;
+    grid-template-columns: 3em 5em auto auto;
+    grid-template-areas:
+        ". emailIcon contactEmail ."
+        ". instagramIcon contactInstagram ."
+        ". formIcon contactForm .";
+}
+
+.contactItems {
+    background: #D6D6D6;
+    padding-left: 0.5em;
+    margin: 5px 0;
+    font-family: 'Oswald', sans-serif;
+    width: 18em;
+    font-size: 2em;
+    border-radius: 0.2em;
+}
+
+#contactEmail {
+    grid-area: contactEmail;
+}
+
+#contactInstagram {
+    grid-area: contactInstagram;
+}
+
+#contactForm {
+    grid-area: contactForm;
+}
+
+#contactEmailIcon {
+    grid-area: emailIcon;
+}
+
+#contactInstagramIcon {
+    grid-area: instagramIcon;
+}
+
+#contactFormIcon {
+    grid-area: formIcon;
+}
+
+#caseStudiesSection {
+    color: #FFFFFF;
+    margin-left: 15.8vw;
+}
+
+#impactCaseStudy {
+    margin: 3.5em 0 3em 0em;
+    width: 27vw;
+}
+#design{
+    margin: 0 0 3em 0;
+    display: grid;
+    grid-template-areas: ". content";
+    grid-template-columns: 10vw 90vw;
+}
+
+#designSection {
+    grid-area: content;
+    width: 88.7vw;
+    background-color: #F0F0F0;
+    border-radius: 0.5em 0 0 0.5em;
+    display: grid;
+    grid-template-columns: 2.7fr 10fr 6fr 10fr 5fr;
+    grid-template-rows: 0.8fr 2fr 2fr;
+    grid-template-areas:
+        ". design . . ."
+        ". logIn . penguin ."
+        ". workOut . . .";
+    row-gap: 1em;
+    padding-bottom: 5em;
+}
+
+.designItems {
+    width: 25em;
+}
+
+#designSection a {
+    width: 25em;
+}
+
+#designSection h1 {
+    grid-area: design;
+}
+#loginDesign {
+    grid-area: logIn;
+}
+#penguinDesign {
+    grid-area: penguin;
+}
+#workoutDesign {
+    grid-area: workOut;
+}
