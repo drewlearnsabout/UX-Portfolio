@@ -70,9 +70,12 @@ h2 {
 
 #sound {
     width: 3em;
+    padding: 0.5em;
     grid-area: sound;
     justify-self: center;
     margin-top: 1em;
+    background: linear-gradient(162deg, rgba(15,1,1,1) 0%, rgba(58,65,69,1) 35%, rgba(13,0,0,1) 100%);
+    border-radius: 2em;
 }
 
 #soundText {
@@ -162,14 +165,14 @@ h2 {
 
 #caseStudiesSection {
     color: #FFFFFF;
-    margin-left: 15.8vw;
+    margin: -3em 0 0 15.8vw;
 }
 
 #impactCaseStudy {
     margin: 3.5em 0 3em 0em;
     width: 27vw;
 }
-#design{
+#design {
     margin: 0 0 3em 0;
     display: grid;
     grid-template-areas: ". content";
@@ -212,3 +215,68 @@ h2 {
 #workoutDesign {
     grid-area: workOut;
 }
+
+#webdesign {
+    margin: 0 0 0 8em;
+}
+
+#webdesignSection {
+    margin-left: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr; 
+    grid-template-areas:
+        "title title"
+        "impact sourdough"
+        "bakery wee "
+        "podcast .";
+    row-gap: 5vw;
+}
+
+#webdesignSection h1 {
+    color: #ECECEC;
+    grid-area: title;
+}
+#impactDesign {grid-area: impact;}
+#sourdoughDesign {grid-area: sourdough;}
+#bakeryDesign {grid-area: bakery;}
+#weeDesign {grid-area: wee;}
+#podcastDesign {grid-area: podcast;}
+
+#webdesignSection a, #webdesignSection img {
+    width: 35vw;
+}
+
+#lineSection {
+    height: 1px;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 0.03fr 0.94fr;
+    grid-template-areas: ". line";
+}
+
+#line {
+    grid-area: line;
+    background-color: #ECECEC;
+}
+
+footer {
+    width: 100%;
+    padding: 1em 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr 0.6fr 0.2fr 0.15fr 0.2fr 0.2fr 0.1fr 0.1fr;
+    grid-template-areas: ". website . resume email linkedIn instagram github .";
+}
+footer a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+
+#mainWebsite {grid-area: website;}
+#resume {grid-area: resume;}
+#email {grid-area: email;}
+#linkedIn {grid-area: linkedIn;}
+#instagram {grid-area: instagram;}
+#github {grid-area: github;}
