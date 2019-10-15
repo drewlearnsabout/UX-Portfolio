@@ -280,3 +280,27 @@ footer a {
 #linkedIn {grid-area: linkedIn;}
 #instagram {grid-area: instagram;}
 #github {grid-area: github;}
+
+@media screen and (max-width: 400px) {
+    #logo {
+        height: 2em;
+        width: 4em;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #titles {
+        padding-left: 10vw;
+    }
+
+    h1 {
+        font-size: 9vw;
+        margin-bottom: -0.5em;
+    }
+    
+    h2 {
+        font-size: 5vw;
+    }
+}
