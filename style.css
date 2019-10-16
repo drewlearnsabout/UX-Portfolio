@@ -281,7 +281,7 @@ footer a {
 #instagram {grid-area: instagram;}
 #github {grid-area: github;}
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
     #logo {
         height: 2em;
         width: 4em;
@@ -302,5 +302,76 @@ footer a {
     
     h2 {
         font-size: 5vw;
+    }
+
+    #intro {
+    grid-template-columns: 10vw auto auto 35vw 1vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". portrait . . ."
+        ". portrait . sound ."
+        ". portrait . soundText ."
+        ". portrait . . ."
+        ". introText introText introText ."
+        ". introText introText introText ."
+        ". introText introText introText .";
+    }
+
+    #portrait {
+        height: 45vw;
+    }
+
+    #introText {
+        font-size: 5vw;
+    }
+    #sound {
+        width: 10vw;
+    }
+
+    #soundText {
+        font-size: 3vw;
+    }
+
+    #contact {
+        grid-template-columns: 5vw 95vw;
+    }
+
+    #contactGroup {
+        width: 90.5vw;
+        height: 45vw;
+    }
+
+    #contactGroup h1 {
+        padding-left: 5vw;
+        font-size: 8vw;
+    }
+    
+    #contactGroup h2 {
+        padding-left: 5.9vw;
+        font-size: 5vw;
+    }
+    #contactItemsSection {
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: 5vw 10vw 10vw 10vw;
+        grid-template-areas:
+            ". emailIcon contactEmail ."
+            ". instagramIcon contactInstagram ."
+            ". formIcon contactForm .";
+    }
+    .contactItems {
+        padding-left: 2vw;
+        margin: 1vw auto;
+        width: 70vw;
+        font-size: 4.5vw;
+    }
+    .contactIcons {
+        width: 10vw;
+    }
+    #caseStudiesSection {
+        margin: 0 0 0 10vw;
+    }
+    #impactCaseStudy {
+        width: 70vw;
     }
 }
