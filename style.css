@@ -286,24 +286,27 @@ footer a {
         height: 2em;
         width: 4em;
     }
-
-    #navbar {
-        display: none;
+    nav {
+        display: grid;
+        grid-template-columns: 30vw 70vw;
     }
-
+    #navbar {
+        width: 55vw;
+        font-size: 1.2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5vw;
+    }
     #titles {
         padding-left: 10vw;
     }
-
     h1 {
         font-size: 9vw;
         margin-bottom: -0.5em;
     }
-    
     h2 {
         font-size: 5vw;
     }
-
     #intro {
     grid-template-columns: 10vw auto auto 35vw 1vw;
     grid-template-rows: auto;
@@ -316,36 +319,29 @@ footer a {
         ". introText introText introText ."
         ". introText introText introText .";
     }
-
     #portrait {
         height: 45vw;
     }
-
     #introText {
         font-size: 5vw;
     }
     #sound {
         width: 10vw;
     }
-
     #soundText {
         font-size: 3vw;
     }
-
     #contact {
         grid-template-columns: 5vw 95vw;
     }
-
     #contactGroup {
-        width: 90.5vw;
-        height: 45vw;
+        width: 92.5vw;
+        height: 38vw;
     }
-
     #contactGroup h1 {
         padding-left: 5vw;
         font-size: 8vw;
     }
-    
     #contactGroup h2 {
         padding-left: 5.9vw;
         font-size: 5vw;
@@ -373,5 +369,60 @@ footer a {
     }
     #impactCaseStudy {
         width: 70vw;
+    }
+    #design {
+        grid-template-columns: 5vw 95vw;
+    }
+    #designSection {
+        width: 92.5vw;
+        grid-template-columns: 2.7fr 6fr 5fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". design ."
+            ". logIn ."
+            ". workOut ."
+            ". penguin .";
+    }
+    .designItems {
+        width: 70vw;
+    }
+    #designSection a {
+        width: 70vw;
+    }
+    #webdesign {
+        margin: 0 0 0 10vw;
+    }
+    #webdesignSection {
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1.2fr 1.2fr 1.2fr 1.2fr 0.5fr; 
+        grid-template-areas:
+            "title"
+            "impact"
+            "sourdough"
+            "bakery"
+            "wee"
+            "podcast";
+    }
+    #webdesignSection h1 {
+        font-size: 7vw;
+    }
+    #webdesignSection a, #webdesignSection img {
+        width: 75vw;
+    }
+    footer {
+        width: 100%;
+        padding: 1em 0;
+        grid-template-columns: 10vw 1fr 1fr 2fr;
+        grid-template-rows: 13vw auto auto;
+        grid-template-areas:
+            ". website website website"
+            ". resume . instagram"
+            ". email . github"
+            ". linkedIn . .";
+    }
+    footer a {
+        font-size: 5vw;
     }
 }
