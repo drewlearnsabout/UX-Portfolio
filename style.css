@@ -128,6 +128,18 @@ h2 {
         ". instagramIcon contactInstagram ."
         ". formIcon contactForm .";
 }
+#contactItemsSection span, #contactItemsSection img {
+    cursor: pointer;
+}
+
+#contactItemsSection a {
+    text-decoration: none;
+    color: #171717;
+}
+
+#contactItemsSection a:hover {
+    color: rgb(4, 81, 223);
+}
 
 .contactItems {
     background: #D6D6D6;
@@ -274,6 +286,10 @@ footer a {
     color: #ECECEC;
 }
 
+.footerLink {
+    font-family: 'Oswald', sans-serif;
+}
+
 #mainWebsite {grid-area: website;}
 #resume {grid-area: resume;}
 #email {grid-area: email;}
@@ -281,7 +297,64 @@ footer a {
 #instagram {grid-area: instagram;}
 #github {grid-area: github;}
 
+#form1 {
+    background: linear-gradient(180deg, rgb(236, 236, 236) 0%, rgba(131,169,132,1) 100%);
+}
+form {
+    display: grid;
+    grid-template-columns: 0vw 10vw 2vw 20vw 0vw;
+    grid-template-rows: 3vw auto auto auto auto;
+    row-gap: 1vw;
+    grid-template-areas: 
+        ". formTitle . . ."
+        ". formName . nameBox ."
+        ". formEmail . emailBox ."
+        ". formMessage . textBox ."
+        ". . . submit .";
+}
+
+.formText {
+    align-self: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.formInput {
+    height: 5vh;
+    align-self: center;
+    border-radius: 0.5em;
+    padding-left: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#textBox {
+    align-self: center;
+    border-radius: 0.5em;
+    padding-left: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#submit {
+    border-radius: 0.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+#formTitle {
+    grid-area: formTitle;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#formName {grid-area: formName;}
+#formEmail {grid-area: formEmail;}
+#formMessage {grid-area: formMessage;}
+#nameBox {grid-area: nameBox;}
+#emailBox {grid-area: emailBox;}
+#textBox {grid-area: textBox;}
+#submit {grid-area: submit;}
+
 @media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
     #logo {
         height: 2em;
         width: 4em;
@@ -292,7 +365,7 @@ footer a {
     }
     #navbar {
         width: 55vw;
-        font-size: 1.2em;
+        font-size: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 5vw;
@@ -361,7 +434,7 @@ footer a {
         width: 70vw;
         font-size: 4.5vw;
     }
-    .contactIcons {
+    .contactIcons img {
         width: 10vw;
     }
     #caseStudiesSection {
@@ -424,5 +497,20 @@ footer a {
     }
     footer a {
         font-size: 5vw;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 0vw 60vw 0vw;
+        grid-template-rows: 10vw 5vw 12vw 15vw 5vw 12vw 15vw;
+        row-gap: 1vw;
+        grid-template-areas: 
+            ". formTitle ."
+            ". formName ."
+            ". nameBox ."
+            ". formEmail ."
+            ". emailBox ."
+            ". formMessage ."
+            ". textBox ."
+            ". submit .";
     }
 }
