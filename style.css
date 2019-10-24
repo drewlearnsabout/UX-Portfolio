@@ -21,6 +21,7 @@ nav {
 #logo {
     height: 4em;
     width: 8em;
+    cursor: pointer;
 }
 
 #navbar {
@@ -251,12 +252,11 @@ h2 {
     margin-left: 5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr; 
+    grid-template-rows: 1fr 2fr 2fr 0.1fr; 
     grid-template-areas:
         "title title"
         "impact sourdough"
-        "bakery wee "
-        "podcast .";
+        "bakery wee ";
     row-gap: 5vw;
 }
 
@@ -293,7 +293,7 @@ footer {
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.2em;
     display: grid;
-    grid-template-columns: 0.1fr 0.4fr 0.6fr 0.2fr 0.15fr 0.2fr 0.2fr 0.1fr 0.1fr;
+    grid-template-columns: 0.1fr 0.6fr 0.6fr 0.2fr 0.15fr 0.2fr 0.2fr 0.1fr 0.1fr;
     grid-template-areas: ". website . resume email linkedIn instagram github .";
 }
 footer a {
@@ -489,14 +489,13 @@ form {
         margin-left: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1.2fr 1.2fr 1.2fr 1.2fr 0.5fr; 
+        grid-template-rows: 0.5fr 1.2fr 1.2fr 1.2fr 0.5fr; 
         grid-template-areas:
             "title"
             "impact"
             "sourdough"
             "bakery"
-            "wee"
-            "podcast";
+            "wee";
     }
     #webdesignSection h1 {
         font-size: 7vw;
