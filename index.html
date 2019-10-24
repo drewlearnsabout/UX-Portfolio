@@ -4,101 +4,108 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald:300|Titillium+Web:300&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- Remember to include jQuery :) -->
+        <!-- jQuery script -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-        <!-- jQuery Modal -->
+        <!-- jQuery Modal Library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         
         <script src="index.js"></script>
     </head>
     <body>
+        <!-- Navigation -->
         <nav>
             <img id="logo" src="PortfolioLogo.png">
             <div id="navbar">
-                <a href="#">Articles</a>
-                <a href="#">Design</a>
-                <a href="#">Contact</a>
+                <a href="#articles">Articles</a>
+                <a href="#design">Design</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
-        <header>
-            <div id="titles">
-                <h1>Andrew Carbungco</h1>
-                <h2>UX & Web Designer</h2>
-            </div>
-            <div id="intro">
-                <img id="portrait" src="Portrait Img.png">
-                <img id="sound" src="volume_up_24px_outlined.svg">
-                <p id="soundText">Click for audio introduction</p>
-                <p id="introText">Hello! I am a web and user experience designer that creates simple yet engaging digital environments.  My main goal is to apply behavior analysis and focus on web accessability to the users. Welcome to my site!</p>
-            </div>
-        </header>
-        <section id="contact">
-            <div id="contactGroup">
-                <h1>Want to work together?</h1>
-                <h2>There are plenty of ways to reach me!</h2>
-                <div id="contactItemsSection">
-                    <p id="contactEmail" class="contactItems"><span><a href="mailto: andrew.carbungco@gmail.com">Email</a></span> me at andrew.carbungco@gmail.com</p>
-                    <p id="contactInstagram" class="contactItems"><span><a href="https://www.instagram.com/drewcarbungco/">DM</a></span> me @drewcarbungco on Instagram</p>
-                    <p id="contactForm" class="contactItems">Fill out this <span><a href="#form1" rel="modal:open">contact form</a></span> </p>
-                    <a id="contactEmailIcon" class="contactIcons" href="mailto: andrew.carbungco@gmail.com"><img src="email_24px_outlined.png"></a>
-                    <a id="contactInstagramIcon" class="contactIcons" href="https://www.instagram.com/drewcarbungco/"><img src="message_24px_outlined.png"></a>
-                    <a id="contactFormIcon" class="contactIcons" a href="#form1" rel="modal:open"><img src="assignment_24px_outlined.png"></a>
+        <main id="main">
+            <!-- Header -->
+            <header>
+                <div id="titles">
+                    <h1>Andrew Carbungco</h1>
+                    <h2>UX & Web Designer</h2>
                 </div>
+                <div id="intro">
+                    <img id="portrait" src="Portrait Img.png">
+                    <img id="sound" src="volume_up_24px_outlined.svg">
+                    <p id="soundText">Click for audio introduction</p>
+                    <p id="introText">Hello! I am a web and user experience designer that creates simple yet engaging digital environments.  My main goal is to apply behavior analysis and focus on web accessability to the users. Welcome to my site!</p>
+                </div>
+            </header>
+            <!-- Contact Info -->
+            <section id="contact">
+                <div id="contactGroup">
+                    <h1>Want to work together?</h1>
+                    <h2>There are plenty of ways to reach me!</h2>
+                    <div id="contactItemsSection">
+                        <p id="contactEmail" class="contactItems"><span><a href="mailto: andrew.carbungco@gmail.com">Email</a></span> me at andrew.carbungco@gmail.com</p>
+                        <p id="contactInstagram" class="contactItems"><span><a href="https://www.instagram.com/drewcarbungco/">DM</a></span> me @drewcarbungco on Instagram</p>
+                        <p id="contactForm" class="contactItems">Fill out this <span><a href="#form1" rel="modal:open">contact form</a></span> </p>
+                        <a id="contactEmailIcon" class="contactIcons" href="mailto: andrew.carbungco@gmail.com"><img src="email_24px_outlined.png"></a>
+                        <a id="contactInstagramIcon" class="contactIcons" href="https://www.instagram.com/drewcarbungco/"><img src="message_24px_outlined.png"></a>
+                        <a id="contactFormIcon" class="contactIcons" a href="#form1" rel="modal:open"><img src="assignment_24px_outlined.png"></a>
+                    </div>
+                </div>
+            </section>
+            <!-- Articles Section -->
+            <section id="articles">
+                <article id="caseStudiesSection">
+                    <h1>Case Study</h1>
+                    <a href="#"><img id="impactCaseStudy" src="Impact Case Study.png"></a>
+                </article>
+            </section>
+            <!-- Design Examples Section -->
+            <section id="design">
+                <div id="designSection">
+                    <h1>Design</h1>
+                    <a id="loginDesign" href="#"><img class="designItems"  src="Log In Menu Design.png"></a>
+                    <a id="penguinDesign" href="#"><img class="designItems" src="Penguin Logo Design.png"></a>
+                    <a id="workoutDesign" href="#"><img class="designItems" src="Workout Menu Design.png"></a>
+                </div>
+            </section>
+            <!-- Web Design and Development -->
+            <section id="webdesign">
+                <div id="webdesignSection">
+                    <h1>Web Design/Development</h1>
+                    <a id="impactDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Impact Website Design.png"></a>
+                    <a id="sourdoughDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Sourdough Bread Design.png"></a>
+                    <a id="bakeryDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Bakery Website Design.png"></a>
+                    <a id="weeDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Wee Jammin Website Design.png"></a>
+                    <a id="podcastDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Podcast Website Design.png"></a>
+                </div>
+            </section>
+            <!-- Line Divider -->
+            <div id="lineSection">
+                <div id="line"></div>
             </div>
-        </section>
-        <section id="articles">
-            <article id="caseStudiesSection">
-                <h1>Case Study</h1>
-                <a href="#"><img id="impactCaseStudy" src="Impact Case Study.png"></a>
-            </article>
-        </section>
-        <section id="design">
-            <div id="designSection">
-                <h1>Design</h1>
-                <a id="loginDesign" href="#"><img class="designItems"  src="Log In Menu Design.png"></a>
-                <a id="penguinDesign" href="#"><img class="designItems" src="Penguin Logo Design.png"></a>
-                <a id="workoutDesign" href="#"><img class="designItems" src="Workout Menu Design.png"></a>
+            <!-- Footer -->
+            <footer>
+                <a href="#" id="mainWebsite">drew-carbungco.netlify.com</a>
+                <a class="footerLink" href="#" id="resume">Resume</a>
+                <a class="footerLink" href="mailto: andrew.carbungco@gmail.com" id="email">Email</a>
+                <a class="footerLink" href="https://www.linkedin.com/in/andrew-carbungco-1357ab22" id="linkedIn">LinkedIn</a>
+                <a class="footerLink" href="https://www.instagram.com/drewcarbungco/" id="instagram">Instagram</a>
+                <a class="footerLink" href="https://www.github.com/drewlearnsabout" id="github">Github</a>
+            </footer>
+            <!-- Popup Form Modal -->
+            <div id="form1" class="modal">
+                <form>
+                    <p class="formText" id="formTitle">Connect with me!</p>
+                    <p class="formText" id="formName">Name</p>
+                    <p class="formText" id="formEmail">Email Address</p>
+                    <p class="formText" id="formMessage">Message</p>
+                    <input class="formInput" id="nameBox" type="text" name="Name" placeholder="Name">
+                    <input class="formInput" id="emailBox" type="email" name="Email" placeholder="Email">
+                    <textarea id="textBox" type="text" name="Message" placeholder="Message"></textarea>
+                    <input id="submit" type="submit">
+                </form>
+                <a href="#" rel="modal:close"></a>
             </div>
-        </section>
-
-        <section id="webdesign">
-            <div id="webdesignSection">
-                <h1>Web Design/Development</h1>
-                <a id="impactDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Impact Website Design.png"></a>
-                <a id="sourdoughDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Sourdough Bread Design.png"></a>
-                <a id="bakeryDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Bakery Website Design.png"></a>
-                <a id="weeDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Wee Jammin Website Design.png"></a>
-                <a id="podcastDesign" class="webdesignIcon" href="#"><img class="webdesignIcon" src="Podcast Website Design.png"></a>
-            </div>
-        </section>
-        <div id="lineSection">
-            <div id="line"></div>
-        </div>
-        <footer>
-            <a href="#" id="mainWebsite">drew-carbungco.netlify.com</a>
-            <a class="footerLink" href="#" id="resume">Resume</a>
-            <a class="footerLink" href="mailto: andrew.carbungco@gmail.com" id="email">Email</a>
-            <a class="footerLink" href="https://www.linkedin.com/in/andrew-carbungco-1357ab22" id="linkedIn">LinkedIn</a>
-            <a class="footerLink" href="https://www.instagram.com/drewcarbungco/" id="instagram">Instagram</a>
-            <a class="footerLink" href="https://www.github.com/drewlearnsabout" id="github">Github</a>
-        </footer>
-
-        <!-- Modal HTML embedded directly into document -->
-    <div id="form1" class="modal">
-        <form>
-            <p class="formText" id="formTitle">Connect with me!</p>
-            <p class="formText" id="formName">Name</p>
-            <p class="formText" id="formEmail">Email Address</p>
-            <p class="formText" id="formMessage">Message</p>
-            <input class="formInput" id="nameBox" type="text" name="Name" placeholder="Name">
-            <input class="formInput" id="emailBox" type="email" name="Email" placeholder="Email">
-            <textarea id="textBox" type="text" name="Message" placeholder="Message"></textarea>
-            <input id="submit" type="submit">
-        </form>
-        <a href="#" rel="modal:close"></a>
-  </div>
-
+        </main>
     </body>
 </html>

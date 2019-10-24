@@ -3,11 +3,19 @@ body {
     background: linear-gradient(180deg, #282828 0%, rgba(255, 255, 255, 0) 100%), #171717;
 }
 
+main {
+    margin-top: 15vh;
+}
+
 nav {
+    width: 98%;
     display: flex;
     justify-content: space-between;
     background: #F0F0F0;
     padding: 0.5em 1em;
+    position: fixed;
+    top: 0;
+    border-bottom: 0.5px solid #282828;
 }
 
 #logo {
@@ -27,6 +35,12 @@ nav {
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
     color: #171717;
+}
+
+#navbar a:hover {
+    color: rgb(233, 156, 14);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #titles {
@@ -138,7 +152,8 @@ h2 {
 }
 
 #contactItemsSection a:hover {
-    color: rgb(4, 81, 223);
+    color: rgb(233, 156, 14);
+    text-decoration: underline;
 }
 
 .contactItems {
@@ -289,6 +304,11 @@ footer a {
 .footerLink {
     font-family: 'Oswald', sans-serif;
 }
+.footerLink:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(233, 156, 14);
+}
 
 #mainWebsite {grid-area: website;}
 #resume {grid-area: resume;}
@@ -302,7 +322,7 @@ footer a {
 }
 form {
     display: grid;
-    grid-template-columns: 0vw 10vw 2vw 20vw 0vw;
+    grid-template-columns: 2vw 10vw 0vw 17vw 0vw;
     grid-template-rows: 3vw auto auto auto auto;
     row-gap: 1vw;
     grid-template-areas: 
