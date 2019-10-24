@@ -97,6 +97,7 @@ h2 {
     font-family: 'Titillium Web', sans-serif;
     grid-area: soundText;
     justify-self: center;
+    text-align: center;
 }
 
 #introText {
