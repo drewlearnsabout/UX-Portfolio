@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    background: linear-gradient(180deg, #282828 0%, rgba(255, 255, 255, 0) 100%), #171717;
+    background: linear-gradient(180deg, rgba(148,148,148,1) 0%, rgba(150,150,150,1) 100%);
 }
 
 main {
@@ -15,7 +15,7 @@ nav {
     padding: 0.5em 1em;
     position: fixed;
     top: 0;
-    border-bottom: 0.5px solid #282828;
+    border-bottom: 0.5px solid #868686;
 }
 
 #logo {
@@ -47,6 +47,7 @@ nav {
 #titles {
     color: #FFFFFF;
     padding-left: 10em;
+    text-shadow: 2px 2px 2px rgb(77, 77, 77);
 }
 
 h1 {
@@ -77,6 +78,7 @@ h2 {
 
 #intro p {
     color: #FFFFFF;
+    text-shadow: 2px 2px 2px rgb(77, 77, 77);
 }
 
 #portrait {
@@ -89,7 +91,6 @@ h2 {
     grid-area: sound;
     justify-self: center;
     margin-top: 1em;
-    background: linear-gradient(162deg, rgba(15,1,1,1) 0%, rgba(58,65,69,1) 35%, rgba(13,0,0,1) 100%);
     border-radius: 2em;
 }
 
@@ -195,6 +196,7 @@ h2 {
 #caseStudiesSection {
     color: #FFFFFF;
     margin: -3em 0 0 15.8vw;
+    text-shadow: 2px 2px 2px rgb(77, 77, 77);
 }
 
 #impactCaseStudy {
@@ -264,6 +266,7 @@ h2 {
 #webdesignSection h1 {
     color: #ECECEC;
     grid-area: title;
+    text-shadow: 2px 2px 2px rgb(77, 77, 77);
 }
 #impactDesign {grid-area: impact;}
 #sourdoughDesign {grid-area: sourdough;}
@@ -296,6 +299,7 @@ footer {
     display: grid;
     grid-template-columns: 0.1fr 0.6fr 0.6fr 0.2fr 0.15fr 0.2fr 0.2fr 0.1fr 0.1fr;
     grid-template-areas: ". website . resume email linkedIn instagram github .";
+    text-shadow: 2px 2px 2px rgb(77, 77, 77);
 }
 footer a {
     text-decoration: none;
