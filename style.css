@@ -4,18 +4,41 @@ body {
 }
 
 main {
-    margin-top: 15vh;
+    margin-top: 0;
+}
+
+#constructionNotice {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 10;
+    left: 50vw;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: 5em;
+    margin-bottom: -0.5em;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 3em;
 }
 
 nav {
     width: 98%;
     display: flex;
     justify-content: space-between;
-    background: #F0F0F0;
+    background: rgb(255, 255, 255);
     padding: 0.5em 1em;
     position: fixed;
     top: 0;
     border-bottom: 0.5px solid #868686;
+    z-index: 3;
 }
 
 #logo {
@@ -45,73 +68,97 @@ nav {
 }
 
 #titles {
-    color: #FFFFFF;
-    padding-left: 10em;
-    text-shadow: 2px 2px 2px rgb(77, 77, 77);
-}
-
-h1 {
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: normal;
-    font-size: 5em;
-    margin-bottom: -0.5em;
-}
-
-h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: normal;
-    font-size: 3em;
-}
-
-#intro {
+    padding-top: 20vh;
+    height: 100vh;
+    width: 100%;
+    background: #262626;
     display: grid;
-    width: 70%;
-    grid-template-columns: 10em auto 10em 35em 2em;
-    grid-template-rows: auto;
+    grid-template-columns: 13vw 45vw auto 10vw;
+    grid-template-rows: 10vh 7vh 12vh 5vh 5vh;
     grid-template-areas:
-        ". . . introText ."
-        ". portrait . introText ."
-        ". sound . introText ."
-        ". soundText . introText ."
-        ". . . introText .";
+        ". . portrait ."
+        ". header1 portrait ."
+        ". . portrait ."
+        ". header2 portrait ."
+        ". . portrait .";
 }
 
-#intro p {
+#titles h1 {
+    font-family: 'Oswald', sans-serif;
+    grid-area: header1;
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px rgb(77, 77, 77);
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.438);
+    z-index: 2;
+
+}
+
+#titles h2 {
+    font-weight: lighter;
+    grid-area: header2;
+    color: #FFFFFF;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.438);
+
 }
 
 #portrait {
-    grid-area: portrait;
+    height: 100vh;
+    grid-column: 3 / 4;
+    grid-row: 1 / 6;
 }
-
+#intro {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10vw 40vw 20vw 12vw 5vw;
+    grid-template-rows: 10vh 15vh 12vh 5vh 5vh 10vh;
+    grid-template-areas:
+        ". . . . ."
+        ". introText . . ."
+        ". introText . soundText ."
+        ". introText . soundPic ."
+        ". introText . . ."
+        ". . . . .";
+    row-gap: 1em;
+}
+#introText {
+    grid-area: introText;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    font-weight: lighter;
+    color: #FFFFFF;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.438);
+}
 #sound {
-    width: 3em;
-    padding: 0.5em;
-    grid-area: sound;
+    grid-area: soundPic;
+    width: 4.5vw;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+    border-radius: 0.5em;
     justify-self: center;
-    margin-top: 1em;
-    border-radius: 2em;
 }
-
 #soundText {
-    font-family: 'Titillium Web', sans-serif;
     grid-area: soundText;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.4vw;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
     justify-self: center;
     text-align: center;
 }
-
-#introText {
-    font-family: 'Oswald', sans-serif;
-    font-weight: lighter;
-    font-size: 3em;
-    grid-area: introText;
+#contactSection {
+    display: grid;
+    grid-template-rows: 10vh auto 10vh; 
 }
-
+#contactBackground {
+    width: 100%;
+    height: 85vh;
+    background: #262626;
+    grid-row: 1 / 2;
+}
 #contact {
     display: grid;
     grid-template-areas: ". content";
     grid-template-columns: 10vw 90vw;
+    grid-row: 2 / 3;
 }
 
 #contactGroup {
@@ -193,18 +240,89 @@ h2 {
     grid-area: formIcon;
 }
 
-#caseStudiesSection {
+#articlesBanner {
+    margin-top: 10vh;
+    height: 100vh;
+    background: #262626;
+    display: grid;
+    grid-template-columns: 15.8vw 8.5vw 27.5vw 25.8vw 18vw 5vw;
+    grid-template-rows: 25vh 51vh 30vh;
+    grid-template-areas:
+        ". . . . . ."
+        ". articles articles . . ."
+        ". . . prototype banner2 .";
+}
+
+#articlesBanner h1 {
+    grid-area: articles;
+    font-family: oswald;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.534);
     color: #FFFFFF;
-    margin: -3em 0 0 15.8vw;
-    text-shadow: 2px 2px 2px rgb(77, 77, 77);
+    z-index: 2;
+}
+
+#articleBanner1 {
+    height: 50vh;
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+}
+#articleBanner2 {
+    height: 20vh;
+    grid-area: banner2;
+}
+#articleBanner3 {
+    height: 20vh;
+    grid-column: 5 / 6;
+    grid-area: prototype;
+
+}
+#caseStudyGroup {
+    margin-top: 35vh;
+    display: grid;
+    grid-template-columns: 10vw 88.5vw;
+    grid-template-rows: 25% 25% 25%;
+}
+
+#caseStudyBackground {
+    background: #262626;
+    height: 100vh;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: 1;
+}
+#caseStudyBackground h1 {
+    margin-left: 15.8vw;
+    font-family: oswald;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.534);
+}
+
+#caseStudiesSection {
+    margin-left: 15.8vw;
+    margin-top: 5vh;
+    height: 75vh;
+    background: #E6E6E6;
+    padding: 5vh;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    z-index: 2;
 }
 
 #impactCaseStudy {
-    margin: 3.5em 0 3em 0em;
     width: 27vw;
 }
+#designBanner {
+    margin-top: 10vh;
+    height: 100vh;
+    background: #262626;
+    display: grid;
+    grid-template-columns: 5vw 15vw 30vw 10vw 30vw 5vw;
+}
+#designBanner h1 {
+
+}
 #design {
-    margin: 0 0 3em 0;
+    margin: 20vh 0 3em 0;
     display: grid;
     grid-template-areas: ". content";
     grid-template-columns: 10vw 90vw;
@@ -216,18 +334,18 @@ h2 {
     background-color: #F0F0F0;
     border-radius: 0.5em 0 0 0.5em;
     display: grid;
-    grid-template-columns: 2.7fr 10fr 6fr 10fr 5fr;
-    grid-template-rows: 0.8fr 2fr 2fr;
+    grid-template-columns: 6vw 20vw 20vw 20vw;
+    grid-template-rows: 0.8fr 0.5fr;
     grid-template-areas:
-        ". design . . ."
-        ". logIn . penguin ."
-        ". workOut . . .";
+        ". design . ."
+        ". . . ."
+        ". logIn workOut penguin";
     row-gap: 1em;
     padding-bottom: 5em;
 }
 
 .designItems {
-    width: 25em;
+    width: 15em;
 }
 
 #designSection a {
@@ -275,7 +393,7 @@ h2 {
 #podcastDesign {grid-area: podcast;}
 
 #webdesignSection a, #webdesignSection img {
-    width: 35vw;
+    width: 25vw;
 }
 
 #lineSection {
@@ -404,21 +522,6 @@ form {
     }
     h2 {
         font-size: 5vw;
-    }
-    #intro {
-    grid-template-columns: 10vw auto auto 35vw 1vw;
-    grid-template-rows: auto;
-    grid-template-areas:
-        ". portrait . . ."
-        ". portrait . sound ."
-        ". portrait . soundText ."
-        ". portrait . . ."
-        ". introText introText introText ."
-        ". introText introText introText ."
-        ". introText introText introText .";
-    }
-    #portrait {
-        height: 45vw;
     }
     #introText {
         font-size: 5vw;

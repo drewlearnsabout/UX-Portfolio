@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300|Titillium+Web:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,600|Titillium+Web:300&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- jQuery script -->
@@ -15,11 +15,12 @@
     </head>
     <body>
         <!-- Navigation -->
+        <div id="constructionNotice">(Site under construction)</div>
         <nav>
-            <a href="#titles"><img id="logo" src="PortfolioLogo.png" alt="Logo of Andrew Carbungco and back to top Button"></a>
+            <a href="index.html"><img id="logo" src="PortfolioLogo.png" alt="Logo of Andrew Carbungco and back to top Button"></a>
             <div id="navbar">
-                <a href="#articles">Articles</a>
-                <a href="#design">Design</a>
+                <a href="index3.html">Articles</a>
+                <a href="index2.html">Design</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
@@ -27,58 +28,36 @@
             <!-- Header -->
             <header>
                 <div id="titles">
-                    <h1>Andrew Carbungco</h1>
-                    <h2>UX & Web Designer</h2>
+                    <h1 id="h1">Andrew Carbungco</h1>
+                    <h2 id="h2">UX & Web Designer</h2>
+                    <img id="portrait" src="portrait 2.png" alt="portrait of Andrew Carbungco">
                 </div>
                 <div id="intro">
-                    <img id="portrait" src="Portrait Img.png" alt="portrait of Andrew Carbungco">
-                    <img id="sound" src="volume_up_24px_outlined.png" alt="Play button for audio intro">
-                    <p id="soundText">Click for audio<br>introduction<br>(Coming Soon!)</p>
-                    <p id="introText">Hello! I am a web and user experience designer that creates simple yet engaging digital environments.  My main goal is to apply behavior analysis and focus on web accessability to the users. Welcome to my site!</p>
+                    <p id="introText">Hello! I am a web and user experience designer that blends behavior analysis and design to create simple yet engaging digital environments. Welcome to my site!</p>
+                    <img id="sound" src="Audio Button.png" alt="Play button for audio intro">
+                    <p id="soundText">Audio introduction<br>(Coming Soon!)</p>
                 </div>
             </header>
             <!-- Contact Info -->
-            <section id="contact">
-                <div id="contactGroup">
-                    <h1>Want to work together?</h1>
-                    <h2>There are plenty of ways to reach me!</h2>
-                    <div id="contactItemsSection">
-                        <p id="contactEmail" class="contactItems"><span><a href="mailto: andrew.carbungco@gmail.com">Email</a></span> me at andrew.carbungco@gmail.com</p>
-                        <p id="contactInstagram" class="contactItems"><span><a href="https://www.instagram.com/drewcarbungco/">DM</a></span> me @drewcarbungco on Instagram</p>
-                        <p id="contactForm" class="contactItems">Fill out this <span><a href="#form1" rel="modal:open">contact form</a></span> </p>
-                        <a id="contactEmailIcon" class="contactIcons" href="mailto: andrew.carbungco@gmail.com"><img src="email_24px_outlined.png" alt="Email Button"></a>
-                        <a id="contactInstagramIcon" class="contactIcons" href="https://www.instagram.com/drewcarbungco/"><img src="message_24px_outlined.png" alt="Instagram Link Button"></a>
-                        <a id="contactFormIcon" class="contactIcons" a href="#form1" rel="modal:open"><img src="assignment_24px_outlined.png" alt="Contact Form Button"></a>
+            <section id="contactSection">
+                <div id="contactBackground"></div>
+                <section id="contact">
+                    <div id="contactGroup">
+                        <h1>Want to work together?</h1>
+                        <h2>There are plenty of ways to reach me!</h2>
+                        <div id="contactItemsSection">
+                            <p id="contactEmail" class="contactItems"><span><a href="mailto: andrew.carbungco@gmail.com">Email</a></span> me at andrew.carbungco@gmail.com</p>
+                            <p id="contactInstagram" class="contactItems"><span><a href="https://www.instagram.com/drewcarbungco/">DM</a></span> me @drewcarbungco on Instagram</p>
+                            <p id="contactForm" class="contactItems">Fill out this <span><a href="#form1" rel="modal:open">contact form</a></span> </p>
+                            <a id="contactEmailIcon" class="contactIcons" href="mailto: andrew.carbungco@gmail.com"><img src="email_24px_outlined.png" alt="Email Button"></a>
+                            <a id="contactInstagramIcon" class="contactIcons" href="https://www.instagram.com/drewcarbungco/"><img src="message_24px_outlined.png" alt="Instagram Link Button"></a>
+                            <a id="contactFormIcon" class="contactIcons" a href="#form1" rel="modal:open"><img src="assignment_24px_outlined.png" alt="Contact Form Button"></a>
+                        </div>
                     </div>
-                </div>
+                </section>
             </section>
-            <!-- Articles Section -->
-            <section id="articles">
-                <article id="caseStudiesSection">
-                    <h1>Case Study</h1>
-                    <a href="https://redesign-impact.netlify.com/" target="_blank"><img id="impactCaseStudy" src="Impact Case Study.png" alt="Aim High Impact Case Study Link"></a>
-                </article>
-            </section>
-            <!-- Design Examples Section -->
-            <section id="design">
-                <div id="designSection">
-                    <h1>Design</h1>
-                    <a id="loginDesign" href="#loginDesign"><img class="designItems"  src="Log In Menu Design.png"></a>
-                    <a id="penguinDesign" href="#penguinDesign"><img class="designItems" src="Penguin Logo Design.png"></a>
-                    <a id="workoutDesign" href="#workoutDesign"><img class="designItems" src="Workout Menu Design.png"></a>
-                </div>
-            </section>
-            <!-- Web Design and Development -->
-            <section id="webdesign">
-                <div id="webdesignSection">
-                    <h1>Web Design/Development</h1>
-                    <a id="impactDesign" class="webdesignIcon" href="https://www.aimhighimpact.org" target="_blank"><img class="webdesignIcon" src="Impact Website Design.png" alt="Aim High Impact Website Link"></a>
-                    <a id="sourdoughDesign" class="webdesignIcon" href="https://sourdough-recipe.netlify.com" target="_blank"><img class="webdesignIcon" src="Sourdough Bread Design.png" alt="Sourdough Bread Recipe Link"></a>
-                    <a id="bakeryDesign" class="webdesignIcon" href="https://example-bakery-landing-page.netlify.com" target="_blank"><img class="webdesignIcon" src="Bakery Website Design.png" alt="Example Website for Bakery Link"></a>
-                    <a id="weeDesign" class="webdesignIcon" href="https://www.weejamminpdx.com" target="_blank"><img class="webdesignIcon" src="Wee Jammin Website Design.png" alt="Wee Jammin Music Lessons Website Link"></a>
-                    
-                </div>
-            </section>
+
+
             <!-- Line Divider -->
             <div id="lineSection">
                 <div id="line"></div>
